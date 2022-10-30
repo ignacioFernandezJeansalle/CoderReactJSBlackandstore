@@ -1,0 +1,14 @@
+.navbar-cart {
+  padding: 0 20px;
+}
+
+.navbar-cart a img {
+  display: block;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.navbar-cart a:hover img {
+  transform: rotate(-20deg);
+  transition: 0.2s;
+}

@@ -1,3 +1,8 @@
+.App-mod {
+  height: 100vh;
+  background: #ddd;
+}
+
 .App {
   text-align: center;
 }
