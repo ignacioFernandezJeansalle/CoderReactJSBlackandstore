@@ -2,6 +2,14 @@
   padding: 0 20px;
 }
 
+.navbar-cart a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
 .navbar-cart a img {
   display: block;
   width: 100%;
@@ -11,4 +19,11 @@
 .navbar-cart a:hover img {
   transform: rotate(-20deg);
   transition: 0.2s;
+}
+
+#navbar-cart-counter {
+  background-color: #f00;
+  margin-left: 2px;
+  border-radius: 35%;
+  padding: 0 5px;
 }
