@@ -1,8 +1,8 @@
-.greeting-container {
+.itemListContainer__container {
   margin: 40px 0;
 }
 
-.greeting-message {
+.itemListContainer__greetingMessage {
   width: 75%;
   margin: 0 auto;
   padding: 50px 20px;

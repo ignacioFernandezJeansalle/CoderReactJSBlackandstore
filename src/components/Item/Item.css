@@ -1,0 +1,17 @@
+.item__container {
+  margin-top: 50px;
+  padding: 2px;
+  border: 1px solid #fff;
+  max-width: 300px;
+}
+
+.item__image img {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+}
+
+.item__description {
+  padding: 10px;
+  background: #fff;
+}

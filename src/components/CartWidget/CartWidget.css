@@ -1,8 +1,8 @@
-.navbar-cart {
+.cartWidget__container {
   padding: 0 20px;
 }
 
-.navbar-cart a {
+.cartWidget__container a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -10,18 +10,18 @@
   color: #fff;
 }
 
-.navbar-cart a img {
+.cartWidget__container a img {
   display: block;
   width: 100%;
   transition: 0.2s;
 }
 
-.navbar-cart a:hover img {
+.cartWidget__container a:hover img {
   transform: rotate(-20deg);
   transition: 0.2s;
 }
 
-#navbar-cart-counter {
+#cartWidget__counter {
   background-color: #f00;
   margin-left: 2px;
   border-radius: 35%;
