@@ -13,12 +13,12 @@ const NavBar = () => {
         </li>
         <li>
           <a className="navbar__items--link" href="#">
-            Ropa
+            Mate
           </a>
         </li>
         <li>
           <a className="navbar__items--link" href="#">
-            Mate
+            Ropa
           </a>
         </li>
         <li>
@@ -28,7 +28,7 @@ const NavBar = () => {
         </li>
         <li>
           <a className="navbar__items--link" href="#">
-            Cuero
+            Escritorio
           </a>
         </li>
       </ul>

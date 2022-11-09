@@ -9,12 +9,12 @@ export const dbProducts = [
     pictureUrl: "images/fotoRef.jpeg",
   },
   {
-    id: 2,
-    title: "Title 2",
+    id: 10,
+    title: "MATE + BOMBILLA ACERO",
     description: "Description 2",
-    price: 222,
+    price: 7500,
     stock: 22,
-    pictureUrl: "images/fotoRef.jpeg",
+    pictureUrl: "images/0010 01 MATE + BOMBILLA ACERO Mate 7500.jpg",
   },
   {
     id: 3,
