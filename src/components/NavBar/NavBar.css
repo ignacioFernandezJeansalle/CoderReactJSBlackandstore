@@ -8,10 +8,14 @@
 }
 
 .navbar__brand {
-  color: #fff;
-  font-size: 2rem;
   margin: 0;
   padding: 20px;
+}
+
+.navbar__brand--logo {
+  display: block;
+  height: 4rem;
+  border-radius: 20px 0;
 }
 
 .navbar__items {
