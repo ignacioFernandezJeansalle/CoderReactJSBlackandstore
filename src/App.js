@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import OtraPagina from "./components/OtraPagina/OtraPagina";
+import ItemListContainer from "./pages/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer";
+import Footer from "./components/Footer/Footer";
 
 import "./App.css";
 
@@ -11,13 +12,12 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<ItemListContainer greetingMessage="Bienvenidos a la mejor tienda BLACK de todos los tiempos!!" />} />
-          <Route path="/otraPagina" element={<OtraPagina />} />
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
         </Routes>
+        {/* <Footer /> */}
       </BrowserRouter>
-      {/* <main>
-        <ItemListContainer greetingMessage="Bienvenidos a la mejor tienda BLACK de todos los tiempos!!" />
-      </main> */}
     </>
   );
 }

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .itemCount__quantity--subItem,
@@ -28,7 +28,7 @@
 }
 
 .itemCount__addToCart {
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .itemCount__addToCart button {

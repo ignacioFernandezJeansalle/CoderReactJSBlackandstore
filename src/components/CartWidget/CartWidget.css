@@ -1,22 +1,19 @@
 .cartWidget__container {
   padding: 0 20px;
-}
-
-.cartWidget__container a {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-decoration: none;
   color: #fff;
 }
 
-.cartWidget__container a img {
+.cartWidget__container img {
   display: block;
   width: 100%;
   transition: 0.2s;
 }
 
-.cartWidget__container a:hover img {
+.cartWidget__container:hover img {
   transform: rotate(-20deg);
   transition: 0.2s;
 }

@@ -1,22 +1,26 @@
 .item__container {
   margin-top: 50px;
   max-width: 300px;
+  text-decoration: none;
+  color: #000;
   background: #fff;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
 
 .item__container:hover {
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 
-.item__image img {
+.item__picture img {
   display: block;
   width: 100%;
 }
 
-.item__description {
+.item__details {
   margin-top: 30px;
+  margin-bottom: 15px;
   padding: 10px;
+  text-align: center;
 }

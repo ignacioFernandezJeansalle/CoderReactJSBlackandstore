@@ -8,40 +8,34 @@ const NavBar = () => {
     <nav className="navbar__container">
       <h1 className="navbar__brand">
         <Link to="/">
-          <img src="logo.png" alt="logo" className="navbar__brand--logo" />
+          <img src="/logo.png" alt="logo" className="navbar__brand--logo" />
         </Link>
-        {/* <a href="/">
-          <img src="logo.png" alt="logo" />
-        </a> */}
       </h1>
       <ul className="navbar__items">
         <li>
-          <a className="navbar__items--link" href="/">
+          <Link to="/category/bolsos-y-accesorios" className="navbar__items--link">
             Bolsos/Accesorios
-          </a>
+          </Link>
         </li>
         <li>
-          <Link to="/otraPagina" className="navbar__items--link">
+          <Link to="/category/mate" className="navbar__items--link">
             Mate
           </Link>
-          {/* <a className="navbar__items--link" href="/otraPagina">
-            Mate
-          </a> */}
         </li>
         <li>
-          <a className="navbar__items--link" href="#">
+          <Link to="/category/ropa" className="navbar__items--link">
             Ropa
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="navbar__items--link" href="#">
+          <Link to="/category/cocina-y-bar" className="navbar__items--link">
             Cocina/Bar
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="navbar__items--link" href="#">
+          <Link to="/category/escritorio" className="navbar__items--link">
             Escritorio
-          </a>
+          </Link>
         </li>
       </ul>
       <CartWidget />
