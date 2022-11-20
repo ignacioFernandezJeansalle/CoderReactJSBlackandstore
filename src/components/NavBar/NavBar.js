@@ -6,11 +6,11 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <nav className="navbar__container">
-      <h1 className="navbar__brand">
+      <div className="navbar__brand">
         <Link to="/">
           <img src="/logo.png" alt="logo" className="navbar__brand--logo" />
         </Link>
-      </h1>
+      </div>
       <ul className="navbar__items">
         <li>
           <Link to="/category/bolsos-y-accesorios" className="navbar__items--link">

@@ -9,8 +9,8 @@
   margin: 10px 0;
 }
 
-.itemCount__quantity--subItem,
-.itemCount__quantity--addItem {
+.itemCount__quantity--btnSubItem,
+.itemCount__quantity--btnAddItem {
   height: 40px;
   width: 40px;
   background: #000;
@@ -22,32 +22,15 @@
   transition: 0.25s;
 }
 
-.itemCount__quantity--totalItem {
-  font-size: 24px;
-  margin: 0;
-}
-
-.itemCount__addToCart {
-  margin: 10px 0;
-}
-
-.itemCount__addToCart button {
-  height: 40px;
-  width: 100%;
-  background: #000;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 0.25s;
-}
-
-.itemCount__quantity--subItem:hover,
-.itemCount__quantity--addItem:hover,
-.itemCount__addToCart button:hover {
+.itemCount__quantity--btnSubItem:hover,
+.itemCount__quantity--btnAddItem:hover {
   background: #fff;
   color: #000;
   border: 1px solid black;
   transition: 0.25s;
+}
+
+.itemCount__quantity--totalItem {
+  font-size: 24px;
+  margin: 0;
 }
