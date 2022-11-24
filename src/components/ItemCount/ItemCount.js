@@ -13,11 +13,11 @@ const ItemCount = ({ count, setCount, stock }) => {
     <div className="itemCount__container">
       <div className="itemCount__quantity">
         <button className="itemCount__quantity--btnSubItem" onClick={subItem}>
-          -
+          <i className="bi bi-dash-lg"></i>
         </button>
         <p className="itemCount__quantity--totalItem">{count}</p>
         <button className="itemCount__quantity--btnAddItem" onClick={addItem}>
-          +
+          <i className="bi bi-plus-lg"></i>
         </button>
       </div>
     </div>

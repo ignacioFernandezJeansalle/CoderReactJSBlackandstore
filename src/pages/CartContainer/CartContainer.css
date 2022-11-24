@@ -1,0 +1,39 @@
+.cartContainer__container {
+  background: yellow;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.cartContainer__container h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.cartContainer__titles {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.cartContainer__titles--product {
+  width: 70%;
+  border: 1px solid red;
+}
+
+.cartContainer__titles--quantity,
+.cartContainer__titles--price {
+  width: 15%;
+  border: 1px solid red;
+  text-align: end;
+}
+
+.cartContainer__products {
+  padding: 10px;
+}
+
+.cartContainer__totalPrice {
+  padding: 10px;
+  text-align: end;
+}

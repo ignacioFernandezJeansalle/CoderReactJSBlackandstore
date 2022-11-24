@@ -56,19 +56,28 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .navbar__items {
     position: absolute;
     display: flex;
     flex-direction: column;
     list-style: none;
+    text-align: center;
     margin: 0;
     padding: 10px;
     top: 80px;
     width: 100%;
+    left: 0;
     background: #000;
+    transition: left 0.5s;
   }
+
+  .navbar__items--hide {
+    left: -100%;
+    transition: left 0.5s;
+  }
+
   .navbar__items li {
     padding: 10px 0;
   }
-}
+} */
