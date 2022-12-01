@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { dbProducts } from "../../db/db";
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 import Loading from "../../components/Loading/Loading";
 import ItemList from "../../components/ItemList/ItemList";
 
@@ -11,23 +11,24 @@ const ItemListContainer = () => {
   const [productList, setProductList] = useState([]);
   const { categoryId } = useParams();
 
-  const getProducts = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (categoryId) {
-        const filteredDbProducts = dbProducts.filter((item) => item.category === categoryId);
-        resolve(filteredDbProducts);
-      } else {
-        resolve(dbProducts);
-      }
-    }, 2000);
-  });
+  const getProducts = () => {
+    const db = getFirestore();
+    const dbCollection = collection(db, "items");
+    const dbQuery = !categoryId ? dbCollection : query(dbCollection, where("categoryId", "==", categoryId));
+    getDocs(dbQuery)
+      .then((response) => {
+        setProductList(response.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   useEffect(() => {
     setLoading(true);
-    getProducts.then((res) => {
-      setProductList(res);
-      setLoading(false);
-    });
+    getProducts();
+    // eslint-disable-next-line
   }, [categoryId]);
 
   return (

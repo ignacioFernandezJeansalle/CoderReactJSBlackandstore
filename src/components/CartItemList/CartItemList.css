@@ -1,0 +1,20 @@
+.cartItemList__product {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.cartItemList__product--detail {
+  display: flex;
+}
+
+.cartItemList__product--btnDelete {
+  border: none;
+  background: #fff;
+  color: #f00;
+  margin-right: 16px;
+  font-size: 1.1rem;
+}
+
+.cartItemList__product--btnDelete:hover {
+  cursor: pointer;
+}

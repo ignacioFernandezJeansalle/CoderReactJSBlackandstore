@@ -2,7 +2,7 @@ import "./ItemCount.css";
 
 const ItemCount = ({ count, setCount, stock }) => {
   const subItem = () => {
-    setCount((currentCount) => (currentCount > 0 ? currentCount - 1 : currentCount));
+    setCount((currentCount) => (currentCount > 1 ? currentCount - 1 : currentCount));
   };
 
   const addItem = () => {

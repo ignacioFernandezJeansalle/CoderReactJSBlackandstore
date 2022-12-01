@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContextProvider";
-import CartItem from "../CartItem/CartItem";
 
 import "./CartItemList.css";
 
@@ -10,9 +9,16 @@ const CartItemList = () => {
   return (
     <div className="cartItemList__container">
       {cart.map((product) => (
-        <div key={product.id}>
-          <button onClick={() => removeFromCart(product.id)}>Eliminar</button>
-          <CartItem product={product} />
+        <div className="cartItemList__product" key={product.id}>
+          <div className="cartItemList__product--detail">
+            <button className="cartItemList__product--btnDelete" onClick={() => removeFromCart(product.id)}>
+              <i className="bi bi-x-circle"></i>
+            </button>
+            <div>
+              {product.title} (x {product.quantity}u.)
+            </div>
+          </div>
+          <div className="cartItemList__product--price">${product.quantity * product.price}.-</div>
         </div>
       ))}
     </div>
