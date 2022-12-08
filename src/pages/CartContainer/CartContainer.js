@@ -1,4 +1,5 @@
 import { useState, useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContextProvider";
 import CartItemList from "../../components/CartItemList/CartItemList";
 
@@ -8,7 +9,7 @@ const CartContainer = () => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [isEmpty, setIsEmpty] = useState(true);
 
-  const { cart } = useContext(CartContext);
+  const { cart, clearCart } = useContext(CartContext);
 
   useEffect(() => {
     setTotalPrice(cart.reduce((acum, item) => acum + item.quantity * item.price, 0));
@@ -31,6 +32,22 @@ const CartContainer = () => {
       <p className="cartContainer__totalPrice">
         <b>TOTAL: ${totalPrice}.-</b>
       </p>
+      <hr />
+      {!isEmpty && (
+        <div className="cartContainer__buttons">
+          <button
+            className="cartContainer__btnClearCart"
+            onClick={() => {
+              clearCart();
+            }}
+          >
+            Vaciar carrito <i className="bi bi-trash3"></i>
+          </button>
+          <Link to="/checkout">
+            <button className="cartContainer__btnCheckout">Finalizar compra</button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

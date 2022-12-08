@@ -11,7 +11,6 @@ const NavBar = () => {
           <img src="/logo.png" alt="logo" className="navbar__brand--logo" />
         </Link>
       </div>
-      {/* <ul className="navbar__items"> */}
       <ul className="navbar__items">
         <li>
           <Link to="/category/bolsos-y-accesorios" className="navbar__items--link">
