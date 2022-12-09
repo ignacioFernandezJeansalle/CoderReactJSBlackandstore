@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 
 import "./NavBar.css";
@@ -13,29 +13,44 @@ const NavBar = () => {
       </div>
       <ul className="navbar__items">
         <li>
-          <Link to="/category/bolsos-y-accesorios" className="navbar__items--link">
+          <NavLink
+            to="/category/bolsos-y-accesorios"
+            className={({ isActive }) => (isActive ? "navbar__items--linkActive" : "navbar__items--link")}
+          >
             Bolsos/Accesorios
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/category/mate" className="navbar__items--link">
+          <NavLink
+            to="/category/mate"
+            className={({ isActive }) => (isActive ? "navbar__items--linkActive" : "navbar__items--link")}
+          >
             Mate
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/category/ropa" className="navbar__items--link">
+          <NavLink
+            to="/category/ropa"
+            className={({ isActive }) => (isActive ? "navbar__items--linkActive" : "navbar__items--link")}
+          >
             Ropa
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/category/cocina-y-bar" className="navbar__items--link">
+          <NavLink
+            to="/category/cocina-y-bar"
+            className={({ isActive }) => (isActive ? "navbar__items--linkActive" : "navbar__items--link")}
+          >
             Cocina/Bar
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/category/escritorio" className="navbar__items--link">
+          <NavLink
+            to="/category/escritorio"
+            className={({ isActive }) => (isActive ? "navbar__items--linkActive" : "navbar__items--link")}
+          >
             Escritorio
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <CartWidget />
