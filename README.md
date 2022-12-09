@@ -2,8 +2,6 @@
 
 ## Descripción general
 
----
-
 Este proyecto es el resultado de aplicar los aprendido durante el curso de React JS en Coderhouse (comisión 34805).
 
 **OBJETIVO**
@@ -21,8 +19,6 @@ Para la validación de datos del comprador se utilizó, por fuera de lo visto en
 Debido a que el presente curso no incluye desarrollo backend, se utilizó como base de datos **Firestore Database** de **[Firebase by Google](https://firebase.google.com/)**. Instalación mediante NPM: `npm install firebase`.
 
 ## Mapa del sitio
-
----
 
 ### Listado de componentes
 
@@ -47,13 +43,9 @@ Debido a que el presente curso no incluye desarrollo backend, se utilizó como b
 
 ## Navegabilidad y flujos básicos de la aplicación
 
----
-
-![Alt text](https://github.com/ignacioFernandezJeansalle/CoderReactJSBlackandstore/blob/main/blackandstore.gif)
+[---> Ver GIF <---](https://github.com/ignacioFernandezJeansalle/CoderReactJSBlackandstore/blob/main/blackandstore.gif)
 
 ## Demo (Deploy)
-
----
 
 Se realizó el deploy de la aplicación a través de Vercel y el repositorio de GitHub.
 
